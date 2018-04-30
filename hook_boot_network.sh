@@ -16,11 +16,11 @@ echo "Phasing out any previous blockchain from disk"
 mkdir -p $DATA/eos-bios
 rm -rf $DATA/eos-bios/blocks $DATA/eos-bios/shared_mem
 
+mkdir -p $CONF/eos-bios
 echo "Copying base config"
-cp base_config.ini config.ini
+cp base_config.ini $CONF/eos-bios/config.ini
 
 echo "Writing genesis.json"
-mkdir -p $CONF/eos-bios
 cp genesis.json $CONF/eos-bios/genesis.json
 
 echo "producer-name = eosio" >> $CONF/eos-bios/config.ini
