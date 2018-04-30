@@ -1,0 +1,9 @@
+peer:
+  my_account: barracuda
+  api_address: http://localhost:8900
+  secret_p2p_address: localhost:9800
+  block_signing_private_key_path: ./privkey-GDW5CV.key
+
+network:
+  seed_discovery_url: https://jerryhuff.keybase.pub/eosblocksmith-barracuda-testnet-eos-bios1.yaml
+  cache_path: .cache
